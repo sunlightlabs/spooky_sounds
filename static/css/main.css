@@ -1,0 +1,100 @@
+h1
+{
+    text-align: center;
+    font-size: 48px;
+}
+
+body
+{
+    background-color: black;
+    color:white;
+}
+
+video
+{
+    text-align: center
+}
+
+canvas
+{
+    width:100%
+}
+
+div#controls
+{
+    margin-top:25px;
+}
+
+div#content
+{
+    margin-bottom:100px;
+}
+
+form.word-list
+{
+    border-bottom: 1px black solid;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+form.word-list input
+{
+    font-size:18px;
+    padding:5px;
+}
+
+div.word-list li
+{
+    padding-top:15px;
+}
+
+h2
+{
+    margin:0;
+    padding:0;
+}
+
+h3
+{
+    margin:0;
+    padding:0;
+    margin-bottom:5px;
+}
+
+div#controls div.controlItem
+{
+    float:left;
+    margin-right:50px;
+}
+
+form.voice-list span
+{
+    margin-bottom:5px;
+}
+
+form.voice-list span input[type='checkbox']
+{
+    -webkit-appearance:none;
+    width:20px;
+    height:20px;
+    background:white;
+    border-radius:5px;
+    border:2px solid #555;
+    vertical-align:middle;
+}
+
+form.voice-list span input[type='checkbox']:checked {
+    background: #abd;
+}
+
+label
+{
+    margin-right:10px;
+}
+
+input[type="number"]
+{
+    width:150px;
+    font-size:12px;
+    padding:5px;
+}

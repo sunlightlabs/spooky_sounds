@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Spooky Sounds</title>
+        <link rel="stylesheet" href="/static/css/main.css" />
+        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+    </head>
+    <body>
+
+        <div id="content">
+            <video id="webcam" autoplay width="800" height="450" style="display:none"></video>
+            <canvas id="canvas-source" width="800" height="450" style="display:none"></canvas>
+            <canvas id="canvas-blended" width="800" height="450"></canvas>
+        </div>
+
+        <div id="controls">
+
+            <div class="controlItem">
+
+                <form class="word-list">
+                    <input type="text" name="word" placeholder="Words to say..." />
+                    <input type="submit" value="Add words">
+                </form>
+                <div class="word-list">
+                    <ul class="word-list">
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="controlItem">
+                <span><strong>Voices</strong></span><button id="toggle-all-voices">Toggle All</button>
+                <form class="voice-list">
+
+                </form>
+            </div>
+
+            <div class="controlItem">
+                <table>
+                    <form class="params">
+                        <tr>
+                            <td><label for="motion_threshold">Motion Threshold</label></td>
+                            <td><input id="motion_threshold" type="number" name="motion_threshold" placeholder="motion_threshold..." /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="probability">Probability</label></td>
+                            <td><input id="probability" type="number" name="probability" placeholder="probability..." /></td>
+                        </tr>
+                        <tr>
+                        <td><label for="speed">Speed WPM</label></td>
+                        <td><input id="speed" type="number" name="speed" placeholder="leave blank to use motion speed" /></td>
+                        </tr>
+                    </form>
+                </table>
+            </div>
+
+            <div class="controlItem">
+                <h2>All User Words (for inspiration)</h2>
+                <div class="others-word">
+                    <ul class="others-words">
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+
+        </footer>
+
+        <div id="javascript">
+            <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"></script>
+            <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+            <script type="text/javascript" src="/static/javascript/spooky_sounds.js" ></script>
+        </div>
+
+    </body>
+</html>
